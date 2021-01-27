@@ -2,6 +2,7 @@
 Логгер с возможностью записи в файловую систему, БД, на сторонние сервисы. 
 
 Пример работы с логгером:
+<pre>
 <code>
 $logger = new Logger();
 
@@ -15,3 +16,4 @@ $logger->addStorage('file', new StorageFile(['file_name' => 'logs.txt']));
 $logger->debug('file', 'test');
 $logger->warning('telegram', 'Hello World');
 </code>
+</pre>
