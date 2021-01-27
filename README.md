@@ -17,3 +17,7 @@ $logger->debug('file', 'test');
 $logger->warning('telegram', 'Hello World');
 </code>
 </pre>
+
+Logger - представляет собой обьект хранящий коллекцию обьектов Storage типа, обьекты добавляются в коллекцию 
+через метод addStorage, обьекты передаваемые через эти методы должны быть наследниками класса AbstractStorage и реализовать методы
+write и formattingText. 
